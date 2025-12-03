@@ -3,6 +3,7 @@
   <link rel="stylesheet" href="style.css"></link>
 </head>
 
+<body>
 <div x-data="{ time: 1500, running: false, interval: null }">
   <div x-text="Math.floor(time/60) + ':' + String(time%60).padStart(2,'0')"></div>
 
@@ -24,6 +25,7 @@
     time = 1500
   ">Reset</button>
 </div>
+</body>
 
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
